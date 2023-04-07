@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- pierwszy, przed naszym css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>WebStudio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container head-section">
+        <!-- logo posiada na początku VV, które nachodzi na siebie, dlatego klasa vv-sign -->
+
+        <div class="logo-header">
+          <a class="logo" href="./index.html">Web<span class="logo-header-color">Studio</span></a>
+        </div>
+
+        <nav class="nav-header">
+          <ul class="list navigation">
+            <!--menu nawigacyjne-->
+            <li><a class="navigation-link" href="./index.html">Agencja</a></li>
+            <li><a class="navigation-link" href="./portfolio.html">Portfolio</a></li>
+            <li><a class="navigation-link" href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div class="contact-header">
+          <!--linki kontaktowe-->
+          <a class="contact-header-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="contact-header-item" href="tel:+48111111111">+48 111 111 111</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero section">
+        <div class="container">
+          <!--sekcja HERO-->
+          <h1 class="title-side">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+          <button class="btn-order" type="button">Zamów usługe</button>
+        </div>
+      </section>
+      <div class="section">
+        <section class="text-part">
+          <div class="container">
+            <!--sekcja tekstowa-->
+            <ul class="list text-part-list">
+              <li class="text-part-list-item">
+                <h3>LOREM IPSUM</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+                  sodales dui. Interdum et malesuada
+                </p>
+              </li>
+              <li class="text-part-list-item">
+                <h3>LOREM IPSUM</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+                  sodales dui. Interdum et malesuada
+                </p>
+              </li>
+              <li class="text-part-list-item">
+                <h3>LOREM IPSUM</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+                  sodales dui. Interdum et malesuada
+                </p>
+              </li>
+              <li class="text-part-list-item">
+                <h3>LOREM IPSUM</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+                  sodales dui. Interdum et malesuada
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="what-do">
+          <div class="container">
+            <h2 class="what-do-header">Czym się zajmujemy</h2>
+            <ul class="list what-do-list">
+              <li>
+                <img
+                  src="images/activities/activities_img1.jpg"
+                  alt="praca przed laptopem na klawiaturze"
+                  width="370"
+                  height="294"
+                />
+              </li>
+              <li>
+                <img
+                  src="images/activities/activities_img2.jpg"
+                  alt="praca z telefonem i laptopem"
+                  width="370"
+                  height="294"
+                />
+              </li>
+              <li>
+                <img
+                  src="images/activities/activities_img3.jpg"
+                  alt="wyswietlanie palety kolorow na tablecie"
+                  width="370"
+                  height="294"
+                />
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <section class="team section">
+        <div class="container">
+          <!--sekcja zespół-->
+          <h2 class="team-header">Nasz zespół</h2>
+          <ul class="list team-list">
+            <li class="team-list-item">
+              <img
+                src="images/team/team_img1.jpg"
+                alt="zdjecie Johna Doe"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">John Doe</h3>
+              <!-- span zamiast p, bo p dla dluzszych tekstow-->
+              <p class="team-profession">Product Designer</p>
+            </li>
+            <li class="team-list-item">
+              <img
+                src="images/team/team_img2.jpg"
+                alt="zdjecie Johna Doe"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">John Doe</h3>
+              <p class="team-profession">Frontend Developer</p>
+            </li>
+            <li class="team-list-item">
+              <img
+                src="images/team/team_img3.jpg"
+                alt="zdjecie Johna Doe"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">John Doe</h3>
+              <p class="team-profession">Marketing</p>
+            </li>
+            <li class="team-list-item">
+              <img
+                src="images/team/team_img4.jpg"
+                alt="zdjecie Johna Doe"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">John Doe</h3>
+              <p class="team-profession">UI Designer</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <a class="logo logo-footer" href="./index.html"
+          >Web<span class="logo-footer-color">Studio</span></a
+        >
+        <address class="contact-footer">
+          <a
+            class="contact-footer-address"
+            href="https://goo.gl/maps/rVzVEB22XSJ6FxRE9"
+            target="_blank"
+            >m. Warszawa, Aleje Jerozolimskie 21</a
+          >
+          <a class="contact-footer-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="contact-footer-link" href="tel:+48111111111">+48 111 111 111</a>
+        </address>
+      </div>
+    </footer>
+  </body>
+</html>
