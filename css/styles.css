@@ -102,29 +102,16 @@ body {
   --color2: var(--font-color-contact-header);
   --color4: var(--font-color-contact-header);
 }
-.contact-header-item a {
-  padding-left: 10px;
+.contact-header-item {
+  
   text-decoration: none;
   color: var(--font-color-contact-header);
   font-weight: 500;
   font-size: 14px;
 }
 
-/* .icon-envelope,
-.icon-smartphone {
-  --color2: var(--font-color-contact-header);
-}
-.icon-envelope:hover,
-.icon-smartphone:hover,
-.icon-envelope:focus,
-.icon-smartphone:focus {
-  --color2: var(--active-color);
-}
-*/
 .contact-header-item:hover,
-.contact-header-item:focus,
-.contact-header-item a:hover,
-.contact-header-item a:focus {
+.contact-header-item:focus {
   color: var(--active-color);
   --color2: var(--active-color);
   --color4: var(--active-color);
