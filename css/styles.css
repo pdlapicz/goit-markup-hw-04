@@ -264,6 +264,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  /* efekt cienia */
   background-color: var(--background-color-main);
 }
 
@@ -312,6 +313,7 @@ body {
   /* bo domyslnie ma color:#ffffff */
 }
 
+/* cien po najechaniu/focusie */
 .btn-filter:hover,
 .btn-filter:focus {
   background-color: var(--active-color);
@@ -328,8 +330,16 @@ body {
   gap: 30px;
   flex-basis: calc((100% - 20px) / 3);
 }
+
 .gallery-list-item img {
   display: block;
+}
+
+/* efekt cienia po najechaniu kursowem na karte , bez focus */
+.gallery-list-item:hover,
+.gallery-list-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .gallery-list-item-description {
