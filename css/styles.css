@@ -13,6 +13,7 @@
   --background-color-section: #2f303a;
   --background-color-border: #eeeeee;
   --background-color-team: #f5f4fa;
+  --background-color-logo: #f5f4fa;
   --background-color-btn-unactive: #f5f4fa;
 }
 
@@ -109,8 +110,8 @@ body {
   font-size: 14px;
 }
 
-.contact-header-item svg{
-margin-right:10px;
+.contact-header-item svg {
+  margin-right: 10px;
 }
 
 .contact-header-item:hover,
@@ -223,6 +224,17 @@ margin-right:10px;
 .our-strengths-list {
   display: flex;
   gap: 30px;
+}
+
+.our-strenghts-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* wysrodkowanie loga */
+  height: 120px;
+  background-color: var(--background-color-logo);
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .our-strengths-list-item h3 {
