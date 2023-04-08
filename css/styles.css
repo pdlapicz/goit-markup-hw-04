@@ -82,7 +82,7 @@ body {
 .navigation {
   display: flex;
   gap: 46px;
-  padding-right: 371px;
+  padding-right: 345px;
 }
 
 .navigation-link {
@@ -98,18 +98,36 @@ body {
 
 .contact-header {
   display: flex;
-  gap: 50px;
+  gap: 30px;
+  --color2: var(--font-color-contact-header);
+  --color4: var(--font-color-contact-header);
 }
-.contact-header-item {
+.contact-header-item a {
+  padding-left: 10px;
   text-decoration: none;
   color: var(--font-color-contact-header);
   font-weight: 500;
   font-size: 14px;
 }
 
+/* .icon-envelope,
+.icon-smartphone {
+  --color2: var(--font-color-contact-header);
+}
+.icon-envelope:hover,
+.icon-smartphone:hover,
+.icon-envelope:focus,
+.icon-smartphone:focus {
+  --color2: var(--active-color);
+}
+*/
 .contact-header-item:hover,
-.contact-header-item:focus {
+.contact-header-item:focus,
+.contact-header-item a:hover,
+.contact-header-item a:focus {
   color: var(--active-color);
+  --color2: var(--active-color);
+  --color4: var(--active-color);
 }
 
 .footer {
