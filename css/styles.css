@@ -103,11 +103,14 @@ body {
   --color4: var(--font-color-contact-header);
 }
 .contact-header-item {
-  
   text-decoration: none;
   color: var(--font-color-contact-header);
   font-weight: 500;
   font-size: 14px;
+}
+
+.contact-header-item svg{
+margin-right:10px;
 }
 
 .contact-header-item:hover,
