@@ -290,10 +290,7 @@ body {
 
 .team-name,
 .team-profession {
-  /* display: flex;
-  justify-content: center; */
   text-align: center;
-  /* jeszcze nie dziala */
   /* domyslnie 16px font-size */
 }
 
@@ -301,12 +298,20 @@ body {
   padding-top: 30px;
   font-weight: 500;
   padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .team-profession {
   padding-top: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
   color: var(--font-color-paragraph);
+}
+
+.team-social-media-list {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
 }
 
 /*SEKCJA NASI KLIENCI*/
