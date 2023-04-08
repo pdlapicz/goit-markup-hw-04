@@ -154,7 +154,18 @@ body {
 /* SEKCJA HERO */
 .hero {
   background-color: var(--background-color-section);
-  display: block;
+}
+
+.hero-image {
+  width: 100%;
+  margin: 0 auto; /*wyśrodkowanie*/
+  max-width: 1600px; /*maksymalna szerokosc obrazu po oddaleniu*/
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(10, 10, 10, 0.73)),
+    url(../images/background-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center; /*centorwanie obrazu przy przybliżaniu*/
+  /* dla obrazu */
+  /*gradient*/
   padding: 200px 0;
 }
 
@@ -195,18 +206,18 @@ body {
 }
 
 /* SEKCJA TEKSTOWA */
-.text-part {
+.our-strengths {
   padding-bottom: 94px;
 
   /* dla oddzielenia sekcji wewnetrznych, nie mozna osobno dac sekcji bo najda 2 paddingi */
 }
 
-.text-part-list {
+.our-strengths-list {
   display: flex;
   gap: 30px;
 }
 
-.text-part-list-item h3 {
+.our-strengths-list-item h3 {
   font-weight: 700;
   line-height: 1.1;
   font-size: 14px;
@@ -214,7 +225,7 @@ body {
   padding-bottom: 10px;
 }
 
-.text-part-list-item p {
+.our-strengths-list-item p {
   font-size: 14px;
   line-height: 1.7;
   color: var(--font-color-paragraph);
