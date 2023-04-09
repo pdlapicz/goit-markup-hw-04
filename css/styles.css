@@ -387,6 +387,7 @@ body {
   border-radius: 4px;
   --color1: #afb1b8;
   --color2: #afb1b8;
+  cursor: pointer;
 }
 
 .our-clients-list-item:hover,
