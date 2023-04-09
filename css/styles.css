@@ -15,6 +15,7 @@
   --background-color-team: #f5f4fa;
   --background-color-logo: #f5f4fa;
   --background-color-btn-unactive: #f5f4fa;
+  --border-color: #afb1b8;
 }
 
 h1,
@@ -373,6 +374,29 @@ body {
   margin-bottom: 50px;
 }
 
+.our-clients-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.our-clients-list-item {
+  max-width: 170px;
+  max-height: 92px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  --color1: #afb1b8;
+  --color2: #afb1b8;
+}
+
+.our-clients-list-item:hover,
+.our-clients-list-item:focus {
+  border: 1px solid var(--active-color);
+  border-radius: 4px;
+  --color1: var(--active-color);
+  --color2: var(--active-color);
+  /* color2 dla logo nr 4!!! */
+}
 /* @@@@@@@@@@STRONA PORTFOLIO@@@@@@@@@@@@ */
 /* przyciski do filtrowania */
 .filter-list {
