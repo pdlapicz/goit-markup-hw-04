@@ -126,6 +126,11 @@ body {
   padding: 60px 0;
 }
 
+.footer-part {
+  display: flex;
+  gap: 70px;
+}
+
 .logo-footer {
   display: block;
   margin-bottom: 20px;
@@ -156,6 +161,36 @@ body {
 .contact-footer-link:hover,
 .contact-footer-link:focus {
   color: var(--active-color);
+}
+
+.footer-follow-us h3 {
+  padding-top: 12px;
+  /* bo top 60 ma już klasa footer */
+  padding-bottom: 20px;
+  /* odstep pod naglowkiem */
+  text-transform: uppercase;
+  color: var(--font-color-footer);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.footer-follow-us-list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 206px;
+}
+
+.footer-follow-us-list-item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  --color1: var(--font-color-dark-background);
+  cursor: pointer;
+}
+.footer-follow-us-list-item:hover,
+.footer-follow-us-list-item:focus {
+  background-color: var(--active-color);
 }
 
 /* HEADER I FOOTER ZAKONCZONE */
@@ -304,7 +339,7 @@ body {
 
 .team-profession {
   padding-top: 10px;
-  padding-bottom: 28px;
+  padding-bottom: 16px;
   color: var(--font-color-paragraph);
 }
 
@@ -313,13 +348,19 @@ body {
   justify-content: space-evenly;
   padding-bottom: 30px;
 }
-/* WROCIC DO TEGO@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
 .team-social-media-list-item {
-  /* border: 2px solid red;
-    background-color: #FFFFFF;
-    height: 100px;
-    border-radius:50%;
-    width: 100px; */
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.team-social-media-list-item:hover,
+.team-social-media-list-item:focus {
+  --color1: var(--font-color-dark-background);
+  background-color: var(--active-color);
 }
 
 /*SEKCJA NASI KLIENCI*/
