@@ -53,6 +53,13 @@ body {
 
 .head-section {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.logo-and-navi {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -84,7 +91,7 @@ body {
 .navigation {
   display: flex;
   gap: 46px;
-  padding-right: 345px;
+  /* padding-right: 345px; */
 }
 
 .navigation-link {
@@ -104,6 +111,7 @@ body {
   --color2: var(--font-color-contact-header);
   --color4: var(--font-color-contact-header);
 }
+
 .contact-header-item {
   text-decoration: none;
   color: var(--font-color-contact-header);
@@ -130,6 +138,7 @@ body {
 .footer-part {
   display: flex;
   gap: 70px;
+  flex-wrap: wrap;
 }
 
 .logo-footer {
