@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- czcionki -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- pierwszy, przed naszym css -->
+    <!-- pierwszy, normalize, przed naszym css -->
     <link rel="stylesheet" href="./css/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Portfolio</title>
@@ -18,7 +19,6 @@
   <body>
     <header class="header">
       <div class="container head-section">
-        <!-- logo posiada na początku VV, które nachodzi na siebie, dlatego klasa vv-sign -->
         <div class="logo-and-navi">
           <!-- lewa strona naglowka, logo i nawigacja -->
           <div class="logo-header">
@@ -53,9 +53,10 @@
     </header>
     <main>
       <section class="section">
+        <!-- dla odstepow gora dol paddingami -->
         <section class="filter">
+          <!-- sekcja filtrowania galerii -->
           <div class="container">
-            <!-- sekcja filtrowania galerii -->
             <ul class="list filter-list">
               <li><button class="btn-filter" type="button">Wszystkie</button></li>
               <li><button class="btn-filter" type="button">Strony</button></li>
@@ -66,8 +67,8 @@
           </div>
         </section>
         <section class="gallery">
+          <!-- sekcja obrazowa -->
           <div class="container">
-            <!-- sekcja obrazowa -->
             <ul class="list gallery-list">
               <li class="gallery-list-item">
                 <img
@@ -186,7 +187,9 @@
     </main>
     <footer class="footer">
       <div class="container footer-part">
+        <!-- szerokosc 1200, czesc z logiem, adresem i kontaktem -->
         <div class="footer-address">
+          <!-- div dla logo, aby go wypozocjonowac flexboxem -->
           <a class="logo logo-footer" href="./index.html"
             >Web<span class="logo-footer-color">Studio</span></a
           >
@@ -202,6 +205,7 @@
           </address>
         </div>
         <div class="footer-follow-us">
+          <!-- czesc z ikonami, prawa strona -->
           <h3>dołącz do nas</h3>
           <ul class="footer-follow-us-list list">
             <li class="footer-follow-us-list-item">
@@ -226,6 +230,7 @@
             </li>
           </ul>
         </div>
+        <!-- czesc jeszcze nie uzywana -->
         <div class="footer-empty"></div>
       </div>
     </footer>

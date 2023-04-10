@@ -41,6 +41,7 @@ ul {
 }
 
 .list {
+  /* usuniecie punktorow */
   list-style: none;
 }
 body {
@@ -52,12 +53,14 @@ body {
 }
 
 .head-section {
+  /* glowny podzial */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .logo-and-navi {
+  /* czesc polaczona dla logo i nav, aby oddzielic to od sekcji kontaktowej z prawej strony */
   display: flex;
   flex-wrap: wrap;
 }
@@ -66,6 +69,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   text-decoration: none;
+  /* usuneicie podkreslenia */
   font-weight: 700;
   color: var(--font-color-logo);
 }
@@ -85,13 +89,15 @@ body {
 
 .nav-header,
 .contact-header {
+  /* odstep od gory dla nav i kontaktu, poniewaz logo ma inne */
   padding-top: 32px;
 }
 
 .navigation {
   display: flex;
   gap: 46px;
-  /* padding-right: 345px; */
+  /* ulozenie linkow nawigacyjnych */
+  /* padding-right: 345px; - zamienione przez justify-item */
 }
 
 .navigation-link {
@@ -110,6 +116,7 @@ body {
   gap: 30px;
   --color2: var(--font-color-contact-header);
   --color4: var(--font-color-contact-header);
+  /* zmienne koloru dla ikon */
 }
 
 .contact-header-item {
@@ -121,6 +128,7 @@ body {
 
 .contact-header-item svg {
   margin-right: 10px;
+  /* odstep miedzy ikona a tekstem linku */
 }
 
 .contact-header-item:hover,
@@ -128,6 +136,7 @@ body {
   color: var(--active-color);
   --color2: var(--active-color);
   --color4: var(--active-color);
+  /* zmienne koloru dla ikon */
 }
 
 .footer {
@@ -136,6 +145,7 @@ body {
 }
 
 .footer-part {
+  /* rozlozenie sekcji z logiem i adresem oraz tekstem i ikonami */
   display: flex;
   gap: 70px;
   flex-wrap: wrap;
@@ -143,11 +153,13 @@ body {
 
 .logo-footer {
   display: block;
+  /* aby zachowac polozenie */
   margin-bottom: 20px;
   width: fit-content;
 }
 
 .contact-footer {
+  /* ulozenie czesci z danymi kontaktowymi */
   display: flex;
   flex-direction: column;
   line-height: 1.7;
@@ -179,6 +191,7 @@ body {
   padding-bottom: 20px;
   /* odstep pod naglowkiem */
   text-transform: uppercase;
+  /* napis tylko wielkimi literami */
   color: var(--font-color-footer);
   font-weight: 700;
   font-size: 14px;
@@ -188,6 +201,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 206px;
+  /* szerokosc sekcji i ulozenie ikon w tej proporcji */
 }
 
 .footer-follow-us-list-item {
@@ -196,6 +210,7 @@ body {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   --color1: var(--font-color-dark-background);
+  /* color1 zmienna koloru ikony */
   cursor: pointer;
 }
 .footer-follow-us-list-item:hover,
@@ -230,6 +245,7 @@ body {
 .title-side {
   text-align: center;
   max-width: 696px;
+  /* szrokosc tekstu - max, czyli moze byc mniejszy */
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
@@ -251,9 +267,9 @@ body {
   border-radius: 4px;
   border: 1px solid var(--active-color);
   font-family: 'Roboto', sans-serif;
+  /* button domyslnie ma czcionke domyslna dla przegladarki, wymaga zawsze nadania mimo ze jest w body */
   cursor: pointer;
   font-weight: 700;
-
   color: var(--font-color-dark-background);
   /* button ma domyslne color: #000000 */
   background-color: var(--active-color);
@@ -262,7 +278,6 @@ body {
 /* SEKCJA TEKSTOWA */
 .our-strengths {
   padding-bottom: 94px;
-
   /* dla oddzielenia sekcji wewnetrznych, nie mozna osobno dac sekcji bo najda 2 paddingi */
 }
 
@@ -287,6 +302,7 @@ body {
   line-height: 1.1;
   font-size: 14px;
   text-transform: uppercase;
+  /* same wielkie litery */
   padding-bottom: 10px;
 }
 
@@ -310,6 +326,7 @@ body {
   gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
+  /* ulozenie mozliwie do srodka */
 }
 
 /* SEKCJA TEAM */
@@ -322,6 +339,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  /* ulozenie mozliwie do srodka */
   padding-top: 50px;
 }
 
@@ -356,6 +374,7 @@ body {
 .team-social-media-list {
   display: flex;
   justify-content: space-evenly;
+  /* ulozenie ikon z rownymi odstepami */
   padding-bottom: 30px;
 }
 
@@ -364,12 +383,14 @@ body {
   height: 44px;
   border-radius: 50%;
   background-color: transparent;
+  /* transparent - przezroczysty */
   cursor: pointer;
 }
 
 .team-social-media-list-item:hover,
 .team-social-media-list-item:focus {
   --color1: var(--font-color-dark-background);
+  /* color1 zmienna dla koloru ikon */
   background-color: var(--active-color);
 }
 
@@ -392,10 +413,12 @@ body {
 .our-clients-list-item {
   max-width: 170px;
   max-height: 92px;
+  /* wymiary dla ikon */
   border: 1px solid var(--border-color);
   border-radius: 4px;
   --color1: #afb1b8;
   --color2: #afb1b8;
+  /* color1 i 2 dotycza ikon wykorzytywanych */
   cursor: pointer;
 }
 
@@ -414,6 +437,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 8px;
+  /* ulozenie przyciskow */
   padding-bottom: 50px;
 }
 
@@ -446,11 +470,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  /* ulozenie kart */
   flex-basis: calc((100% - 20px) / 3);
 }
 
 .gallery-list-item img {
   display: block;
+  /* pozbycie sie odstepu miedzy obrazem a tekstem ponizej */
 }
 
 /* efekt cienia po najechaniu kursowem na karte , bez focus */
