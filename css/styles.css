@@ -49,6 +49,7 @@ body {
   color: var(--font-color);
 }
 .header {
+  padding: 24px 0 25px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -63,6 +64,8 @@ body {
   /* czesc polaczona dla logo i nav, aby oddzielic to od sekcji kontaktowej z prawej strony */
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  /* wysrodkowanie w pionie */
 }
 
 .logo {
@@ -73,10 +76,10 @@ body {
   font-weight: 700;
   color: var(--font-color-logo);
 }
+
 .logo-header {
   padding-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  /* to do zmiany @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 }
 
 .logo-header-color {
@@ -85,12 +88,6 @@ body {
 
 .logo-footer-color {
   color: var(--font-color-logo-footer);
-}
-
-.nav-header,
-.contact-header {
-  /* odstep od gory dla nav i kontaktu, poniewaz logo ma inne */
-  padding-top: 32px;
 }
 
 .navigation {
@@ -114,6 +111,8 @@ body {
 .contact-header {
   display: flex;
   gap: 30px;
+  align-items: center;
+  /* wysrodkowanie w pionie */
   --color2: var(--font-color-contact-header);
   --color4: var(--font-color-contact-header);
   /* zmienne koloru dla ikon */
@@ -124,11 +123,11 @@ body {
   color: var(--font-color-contact-header);
   font-weight: 500;
   font-size: 14px;
-}
-
-.contact-header-item svg {
-  margin-right: 10px;
-  /* odstep miedzy ikona a tekstem linku */
+  line-height: 1.1;
+  /* do wysrodkowania ikon w stosunku do tekstu linku */
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .contact-header-item:hover,
