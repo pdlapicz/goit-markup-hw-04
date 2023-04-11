@@ -114,7 +114,7 @@ body {
   align-items: center;
   /* wysrodkowanie w pionie */
   --color2: var(--font-color-contact-header);
-  --color4: var(--font-color-contact-header);
+  --color1: var(--font-color-contact-header);
   /* zmienne koloru dla ikon */
 }
 
@@ -134,10 +134,11 @@ body {
 .contact-header-item:focus {
   color: var(--active-color);
   --color2: var(--active-color);
-  --color4: var(--active-color);
+  --color1: var(--active-color);
   /* zmienne koloru dla ikon */
 }
 
+/* FOOTER */
 .footer {
   background-color: var(--background-color-section);
   padding: 60px 0;
@@ -293,10 +294,10 @@ body {
   height: 120px;
   background-color: var(--background-color-logo);
   border-radius: 4px;
-  margin-bottom: 30px;
 }
 
 .our-strengths-list-item h3 {
+  margin-top: 30px;
   font-weight: 700;
   line-height: 1.1;
   font-size: 14px;
