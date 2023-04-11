@@ -40,7 +40,7 @@ ul {
   padding-bottom: 94px;
 }
 
-.list {
+ul {
   /* usuniecie punktorow */
   list-style: none;
 }
