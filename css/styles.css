@@ -18,6 +18,11 @@
   --border-color: #afb1b8;
 }
 
+* {
+  outline: none;
+  /* usuniecie obramowania po focusie */
+}
+
 h1,
 h2,
 h3,
@@ -38,7 +43,7 @@ ul {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-} 
+}
 
 ul {
   /* usuniecie punktorow */
@@ -57,16 +62,16 @@ body {
   /* glowny podzial */
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
 }
-
+/* 
 .logo-and-navi {
-  /* czesc polaczona dla logo i nav, aby oddzielic to od sekcji kontaktowej z prawej strony */
+   czesc polaczona dla logo i nav, aby oddzielic to od sekcji kontaktowej z prawej strony 
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  /* wysrodkowanie w pionie */
-}
+  wysrodkowanie w pionie 
+} */
 
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -75,11 +80,7 @@ body {
   /* usuneicie podkreslenia */
   font-weight: 700;
   color: var(--font-color-logo);
-}
-
-.logo-header {
-  padding-right: 93px;
-  /* to do zmiany @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+  line-height: 30px;
 }
 
 .logo-header-color {
@@ -93,6 +94,8 @@ body {
 .navigation {
   display: flex;
   gap: 46px;
+  margin-left: 93px;
+  margin-right: 345px;
   /* ulozenie linkow nawigacyjnych */
   /* padding-right: 345px; - zamienione przez justify-item */
 }
@@ -154,7 +157,7 @@ body {
 .logo-footer {
   display: block;
   /* aby zachowac polozenie */
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   width: fit-content;
 }
 
@@ -162,7 +165,7 @@ body {
   /* ulozenie czesci z danymi kontaktowymi */
   display: flex;
   flex-direction: column;
-  line-height: 1.7;
+  line-height: 1.5;
   width: fit-content;
   gap: 9px;
   font-size: 14px;
@@ -197,14 +200,25 @@ body {
   font-size: 14px;
 }
 
-.footer-follow-us-list {
+.footer-follow-us {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   width: 206px;
   /* szerokosc sekcji i ulozenie ikon w tej proporcji */
 }
 
-.footer-follow-us-list-item {
+.footer-follow-us-icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-follow-us-icons-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* wycentrowanie ikon dla tla /pdswietlenia*/
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -213,8 +227,8 @@ body {
   /* color1 zmienna koloru ikony */
   cursor: pointer;
 }
-.footer-follow-us-list-item:hover,
-.footer-follow-us-list-item:focus {
+.footer-follow-us-icons-item:hover,
+.footer-follow-us-icons-item:focus {
   background-color: var(--active-color);
 }
 
@@ -371,14 +385,19 @@ body {
   color: var(--font-color-paragraph);
 }
 
-.team-social-media-list {
+.team-social-media {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   /* ulozenie ikon z rownymi odstepami */
-  padding-bottom: 30px;
+  padding: 0 32px 30px 32px;
 }
 
-.team-social-media-list-item {
+.team-social-media-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -387,8 +406,8 @@ body {
   cursor: pointer;
 }
 
-.team-social-media-list-item:hover,
-.team-social-media-list-item:focus {
+.team-social-media-item:hover,
+.team-social-media-item:focus {
   --color1: var(--font-color-dark-background);
   /* color1 zmienna dla koloru ikon */
   background-color: var(--active-color);
